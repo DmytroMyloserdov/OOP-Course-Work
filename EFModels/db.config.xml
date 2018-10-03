@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<DBPropereties>
+  <connectionString name="EntityContext" value="data source=VINW0210\SQLEXPRESS01;initial catalog=HeadPhoneShop;integrated security=True;" />
+</DBPropereties>

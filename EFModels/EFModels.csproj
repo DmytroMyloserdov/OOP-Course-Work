@@ -50,8 +50,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Entities\Country.cs" />
+    <Compile Include="Entities\Microphone.cs" />
     <Compile Include="Entities\Order.cs" />
-    <Compile Include="Entities\Product.cs" />
+    <Compile Include="Entities\OrderItem.cs" />
+    <Compile Include="Entities\Headphone.cs" />
     <Compile Include="Entities\ProductImage.cs" />
     <Compile Include="Entities\User.cs" />
     <Compile Include="Entities\Company.cs" />

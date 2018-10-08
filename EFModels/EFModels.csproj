@@ -57,6 +57,7 @@
     <Compile Include="Entities\User.cs" />
     <Compile Include="Entities\Company.cs" />
     <Compile Include="EntityContext.cs" />
+    <Compile Include="Mapping\CountryMap.cs" />
     <Compile Include="Mapping\HeadphoneMap.cs" />
     <Compile Include="Mapping\OrderItemMap.cs" />
     <Compile Include="Mapping\OrderMap.cs" />

@@ -21,6 +21,7 @@ namespace EFModels
             modelBuilder.Configurations.Add(new OrderItemMap());
             modelBuilder.Configurations.Add(new OrderMap());
             modelBuilder.Configurations.Add(new HeadphoneMap());
+            modelBuilder.Configurations.Add(new CountryMap());
         }
     }
 }

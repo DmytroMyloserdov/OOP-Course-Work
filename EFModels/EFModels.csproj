@@ -57,7 +57,8 @@
     <Compile Include="Entities\User.cs" />
     <Compile Include="Entities\Company.cs" />
     <Compile Include="EntityContext.cs" />
-    <Compile Include="Mapping\OrderItemMapping.cs" />
+    <Compile Include="Mapping\OrderItemMap.cs" />
+    <Compile Include="Mapping\OrderMap.cs" />
     <Compile Include="Mapping\ProductImageMap.cs" />
     <Compile Include="Mapping\UserMap.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

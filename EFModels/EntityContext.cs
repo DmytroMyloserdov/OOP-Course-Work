@@ -18,7 +18,8 @@ namespace EFModels
         {
             modelBuilder.Configurations.Add(new UserMap());
             modelBuilder.Configurations.Add(new ProductImageMap());
-            modelBuilder.Configurations.Add(new OrderItemMapping());
+            modelBuilder.Configurations.Add(new OrderItemMap());
+            modelBuilder.Configurations.Add(new OrderMap());
         }
     }
 }

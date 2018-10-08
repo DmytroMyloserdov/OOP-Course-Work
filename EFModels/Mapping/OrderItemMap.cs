@@ -4,9 +4,9 @@ using System.Data.Entity.ModelConfiguration;
 
 namespace EFModels.Mapping
 {
-    public class OrderItemMapping : EntityTypeConfiguration<OrderItem>
+    public class OrderItemMap : EntityTypeConfiguration<OrderItem>
     {
-        public OrderItemMapping()
+        public OrderItemMap()
         {
             #region Primary key
 

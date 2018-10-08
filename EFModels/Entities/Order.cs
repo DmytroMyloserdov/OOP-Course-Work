@@ -42,14 +42,11 @@ namespace EFModels.Entities
         /// <summary>
         /// Guid identity field as primary key
         /// </summary>
-        [Key, Index(IsClustered = true)]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public Guid Id { get; set; }
 
         /// <summary>
         /// Foreign key to user field
         /// </summary>
-        [Required]
         public Guid UserId { get; set; }
 
         /// <summary>
@@ -60,7 +57,6 @@ namespace EFModels.Entities
         /// <summary>
         /// Total order price from its order items
         /// </summary>
-        [Required]
         public decimal TotalPrice { get; set; }
 
         /// <summary>

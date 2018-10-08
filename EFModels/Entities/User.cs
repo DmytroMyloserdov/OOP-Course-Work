@@ -37,28 +37,21 @@ namespace EFModels.Entities
         /// <summary>
         /// Guid identity field as primary key
         /// </summary>
-        [Key, Index(IsClustered = true)]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public Guid Id { get; set; }
 
         /// <summary>
         /// User`s first name
         /// </summary>
-        [Required]
-        [StringLength(15)]
         public string FirstName { get; set; }
 
         /// <summary>
         /// User`s last name
         /// </summary>
-        [Required]
-        [StringLength(30)]
         public string LastName { get; set; }
 
         /// <summary>
         /// Unique email field
         /// </summary>
-        [Required]
         [Index(IsUnique = true)]
         public string Email { get; set; }
 
@@ -71,7 +64,6 @@ namespace EFModels.Entities
         /// <summary>
         /// Foreign key to country field
         /// </summary>
-        [Required]
         public int CountryId { get; set; }
 
         /// <summary>

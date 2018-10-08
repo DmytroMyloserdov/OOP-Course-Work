@@ -28,20 +28,16 @@ namespace EFModels.Entities
         /// <summary>
         /// Autoincrementing identity field as primary key
         /// </summary>
-        [Key, Index(IsClustered = true)]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
 
         /// <summary>
         /// Byte image presentation
         /// </summary>
-        [Required]
         public byte[] Image { get; set; }
 
         /// <summary>
         /// Foreign key to product field
         /// </summary>
-        [Required]
         public int ProductId { get; set; }
 
         /// <summary>

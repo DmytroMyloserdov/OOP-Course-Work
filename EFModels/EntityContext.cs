@@ -2,6 +2,7 @@ using System;
 using System.Data.Entity;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
+using EFModels.Mapping;
 
 namespace EFModels
 {
@@ -15,6 +16,8 @@ namespace EFModels
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
+            modelBuilder.Configurations.Add(new UserMap());
+            modelBuilder.Configurations.Add(new ProductImageMap());
         }
     }
 }

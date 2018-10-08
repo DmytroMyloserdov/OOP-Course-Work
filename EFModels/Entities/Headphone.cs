@@ -61,63 +61,51 @@ namespace EFModels.Entities
         /// <summary>
         /// Autoincrementing identity field as primary key
         /// </summary>
-        [Key, Index(IsClustered = true)]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
 
         /// <summary>
         /// Headphone`s title
         /// </summary>
-        [Required]
-        [StringLength(50)]
         public string Title { get; set; }
 
         /// <summary>
         /// Optional description
         /// </summary>
-        [StringLength(400)]
         public string Description { get; set; }
 
         /// <summary>
         /// Headphone`s price in USD
         /// </summary>
-        [Required]
         public decimal Price { get; set; }
 
         /// <summary>
         /// Headphone`s main colour
         /// </summary>
-        [Required]
         public Colour Colour { get; set; }
 
         /// <summary>
         /// Frequency range of headphone from in Hz
         /// </summary>
-        [Required]
         public int FrequencyRangeFrom { get; set; }
 
         /// <summary>
         /// Frequency range of headphone to in Hz
         /// </summary>
-        [Required]
         public int FrequencyRangeTo { get; set; }
 
         /// <summary>
         /// Does headphone has active noise cancelation
         /// </summary>
-        [Required]
         public bool HasActiveNoiseCancellation { get; set; }
 
         /// <summary>
         /// Headphone`s cable length in meters
         /// </summary>
-        [Required]
         public double CableLength { get; set; }
 
         /// <summary>
         /// Does headphone have microphone
         /// </summary>
-        [Required]
         public bool HasMicro { get; set; }
 
         /// <summary>

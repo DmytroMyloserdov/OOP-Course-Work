@@ -35,28 +35,21 @@ namespace EFModels.Entities
         /// <summary>
         /// Autoincrementing identity field as primary key
         /// </summary>
-        [Key, Index(IsClustered = true)]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
 
         /// <summary>
         /// Country`s name
         /// </summary>
-        [Required]
-        [StringLength(50)]
         public string Name { get; set; }
 
         /// <summary>
         /// Short 4-symbol name
         /// </summary>
-        [Required]
-        [StringLength(4)]
         public string ShortName { get; set; }
 
         /// <summary>
         /// Enum world part
         /// </summary>
-        [Required]
         public WorldPart WorldPart { get; set; }
 
         /// <summary>

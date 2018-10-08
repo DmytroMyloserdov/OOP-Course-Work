@@ -32,21 +32,16 @@ namespace EFModels.Entities
         /// <summary>
         /// Autoincrementing identity field as primary key
         /// </summary>
-        [Key, Index(IsClustered = true)]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
 
         /// <summary>
         /// Company`s name
         /// </summary>
-        [Required]
-        [StringLength(50)]
         public string Name { get; set; }
 
         /// <summary>
         /// Foreign key to country field
         /// </summary>
-        [Required]
         public int CountryId { get; set; }
 
         /// <summary>
@@ -57,7 +52,6 @@ namespace EFModels.Entities
         /// <summary>
         /// Logo`s byte presentation
         /// </summary>
-        [Required]
         public byte[] Logo { get; set; }
     }
 }

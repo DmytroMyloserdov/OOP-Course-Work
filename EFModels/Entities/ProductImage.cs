@@ -10,9 +10,16 @@ namespace EFModels.Entities
     public class ProductImage
     {
         /// <summary>
+        /// Creates empty instance of ProductImage
+        /// </summary>
+        public ProductImage()
+        {
+        }
+
+        /// <summary>
         /// Creates instance of ProductImage with selected fields
         /// </summary>
-        public ProductImage(byte[] image, Guid productId)
+        public ProductImage(byte[] image, int productId)
         {
             Image = image;
             ProductId = productId;

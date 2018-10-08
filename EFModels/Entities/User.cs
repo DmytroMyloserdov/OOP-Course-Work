@@ -35,7 +35,7 @@ namespace EFModels.Entities
         }
 
         /// <summary>
-        /// User`s guid as primary key
+        /// Guid identity field as primary key
         /// </summary>
         [Key, Index(IsClustered = true)]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]

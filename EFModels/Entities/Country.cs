@@ -35,7 +35,7 @@ namespace EFModels.Entities
         /// <summary>
         /// Autoincrementing identity field as primary key
         /// </summary>
-        [Key]
+        [Key, Index(IsClustered = true)]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
 

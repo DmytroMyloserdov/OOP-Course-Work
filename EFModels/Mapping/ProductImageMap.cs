@@ -16,6 +16,8 @@ namespace EFModels.Mapping
 
             #region Properties
 
+            ToTable("ProductImages");
+
             Property(t => t.Id)
                 .HasDatabaseGeneratedOption(DatabaseGeneratedOption.Identity)
                 .HasColumnName("Id")

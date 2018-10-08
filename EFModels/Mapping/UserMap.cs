@@ -16,6 +16,8 @@ namespace EFModels.Mapping
 
             #region Properies
 
+            ToTable("Users");
+
             Property(t => t.Id)
                 .HasDatabaseGeneratedOption(DatabaseGeneratedOption.Identity)
                 .HasColumnName("Id")

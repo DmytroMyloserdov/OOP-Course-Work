@@ -32,14 +32,11 @@ namespace EFModels.Entities
         /// <summary>
         /// Guid identity field as primary key
         /// </summary>
-        [Key, Index(IsClustered = true)]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public Guid Id { get; set; }
 
         /// <summary>
         /// Foreign key to headphone field
         /// </summary>
-        [Required]
         public int HeadphoneId { get; set; }
 
         /// <summary>
@@ -50,7 +47,6 @@ namespace EFModels.Entities
         /// <summary>
         /// Foreign key to order field
         /// </summary>
-        [Required]
         public Guid OrderId { get; set; }
 
         /// <summary>
@@ -61,7 +57,6 @@ namespace EFModels.Entities
         /// <summary>
         /// Amount of selected headphone in order
         /// </summary>
-        [Required]
         public int ItemAmount { get; set; }
     }
 }

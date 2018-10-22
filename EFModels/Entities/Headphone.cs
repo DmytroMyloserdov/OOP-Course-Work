@@ -112,14 +112,14 @@ namespace EFModels.Entities
         public MountingType? MountingType { get; set; }
 
         /// <summary>
-        /// Relation filed one-to-many with table ProductImages
-        /// </summary>
-        public virtual ICollection<ProductImage> Images { get; set; }
-
-        /// <summary>
-        /// Relation filed one-to-many with table ProductImages
+        /// Relation filed one-to-many with table OrderItems
         /// </summary>
         public virtual ICollection<OrderItem> OrderItems { get; set; }
+        
+        /// <summary>
+        /// Relation field one-to-many with table ProductImages
+        /// </summary>
+        public virtual ICollection<ProductImage> Images { get; set; }
     }
 
     [Flags]

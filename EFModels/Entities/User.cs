@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace EFModels.Entities
@@ -58,7 +57,6 @@ namespace EFModels.Entities
         /// <summary>
         /// User`s phone number
         /// </summary>
-        [Phone]
         public string PhoneNumber { get; set; }
 
         /// <summary>

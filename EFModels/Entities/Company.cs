@@ -1,7 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
-
-namespace EFModels.Entities
+﻿namespace EFModels.Entities
 {
     /// <summary>
     /// Entity Framework`s table class specifies company`s info
